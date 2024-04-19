@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: customerapp-deployment
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      app: customerapp
+  template:
+    metadata:
+      labels:
+        app: customerapp
+    spec:
+      containers:
+        - name: customerapp
+          image: {{ .Values.app.image }}
+          ports:
+            - containerPort: 80
+          env:
+            - name: ConnectionStrings__DefaultConnection
+              valueFrom:
+                configMapKeyRef:
+                  name: customerapp-config
+                  key: ConnectionString
+          resources:
+            {{ toYaml .Values.app.resources | nindent 12 }}

@@ -1,0 +1,7 @@
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.csproj.AssemblyReference.cache
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.AssemblyInfoInputs.cache
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.AssemblyInfo.cs
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.csproj.CoreCompileInputs.cache
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.MvcApplicationPartsAssemblyInfo.cs
+/Users/sunil/Google Drive/K8Project/CustomerApp/obj/Debug/net5.0/CustomerApp.MvcApplicationPartsAssemblyInfo.cache

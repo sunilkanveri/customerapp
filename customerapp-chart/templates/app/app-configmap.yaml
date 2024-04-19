@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: customerapp-config
+  namespace: {{ .Values.namespace }}
+data:
+  ConnectionString: "Server=mssql-service;Database=customerdb;User Id=sa;"
