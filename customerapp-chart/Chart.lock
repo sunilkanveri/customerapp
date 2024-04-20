@@ -1,0 +1,12 @@
+dependencies:
+- name: kube-prometheus-stack
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 19.0.1
+- name: mssql-chart
+  repository: file://charts/sqlserver
+  version: 0.1.0
+- name: customerapp-chart
+  repository: file://charts/app
+  version: 0.1.0
+digest: sha256:0ed9bab8ba2e8e25c30f2364c7532434c60d396d589c3d40181d3205ecd92890
+generated: "2024-04-20T13:15:29.931229-04:00"

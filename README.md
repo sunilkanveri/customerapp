@@ -15,4 +15,22 @@ This Helm chart deploys a .NET API application with a MySQL database backend. It
 
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
+helm repo add prometheus https://prometheus-community.github.io/helm-charts
 helm repo update
+helm dependency update
+helm dependency build
+helm install customerapp .
+
+
+2. Ports
+
+Grafrana:
+Port: 3000
+user: admin
+password: prom-operator
+
+API:
+Port: 80
+
+DB:
+Port: 1433

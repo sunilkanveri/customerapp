@@ -1,0 +1,11 @@
+app:
+  image: docker.io/skanveri/customerapp:latest
+  resources:
+    requests:
+      memory: "256Mi"
+      cpu: "0.2"
+    limits:
+      memory: "512Mi"
+      cpu: "1"
+environment:
+  DefaultConnection: "server=mssql-service;user=sa;password=default;database=customerdb;"

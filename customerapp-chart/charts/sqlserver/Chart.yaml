@@ -1,0 +1,6 @@
+apiVersion: v2
+name: mssql-chart
+description: A Helm chart for MS SQL Server
+type: application
+version: 0.1.0
+appVersion: "2019-latest"
