@@ -4,6 +4,7 @@ metadata:
   name: customerapp-deployment
   namespace: {{ .Values.namespace }}
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: customerapp
