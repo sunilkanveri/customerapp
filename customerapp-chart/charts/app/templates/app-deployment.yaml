@@ -1,17 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: customerapp-deployment
+  name: {{ .Values.name }}-deployment
   namespace: {{ .Values.namespace }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: customerapp
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: customerapp
+        app: {{ .Values.name }}
+        tier: {{ .Values.env }}
     spec:
       containers:
         - name: customerapp

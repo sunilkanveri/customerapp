@@ -9,4 +9,4 @@ dependencies:
   repository: file://charts/app
   version: 0.1.0
 digest: sha256:0ed9bab8ba2e8e25c30f2364c7532434c60d396d589c3d40181d3205ecd92890
-generated: "2024-04-20T13:15:29.931229-04:00"
+generated: "2024-04-21T14:00:12.308681-04:00"

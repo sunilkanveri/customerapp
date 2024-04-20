@@ -9,4 +9,7 @@ mssql:
       memory: "512Mi"
       cpu: "1"
   secret:
-    saPassword: "RGVmYXVsdEAxMjQ1" # Base64 encoded
+    saPassword: RGVmYXVsdEAxMjQ1 # Base64 encoded
+name: mssql
+namespace: customerapp-space
+tier: db

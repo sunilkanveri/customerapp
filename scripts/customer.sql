@@ -12,7 +12,8 @@ GO
 -- Create the Customers table
 CREATE TABLE Customers
 (
-    CustomerID INT IDENTITY(1,1) PRIMARY KEY,
+    ID INT IDENTITY(1,1) PRIMARY KEY,
+    Prefix NVARCHAR (50) NULL,
     FirstName NVARCHAR(100) NOT NULL,
     MiddleName NVARCHAR(100) NULL,
     LastName NVARCHAR(100) NOT NULL,
@@ -29,8 +30,8 @@ GO
 
 -- Insert initial data into the Customers table
 INSERT INTO Customers
-    (FirstName, MiddleName, LastName, Suffix, Email, PhoneNumber)
+    (Prefix, FirstName, MiddleName, LastName, Suffix, Email, PhoneNumber)
 VALUES
-    ('John', 'Q.', 'Public', 'Jr.', 'john.q.public@example.com', '123-456-7890'),
-    ('Jane', 'R.', 'Doe', NULL, 'jane.r.doe@example.com', '234-567-8901');
+    ('Mr.', 'John', 'Q.', 'Public', 'Jr.', 'john.q.public@example.com', '123-456-7890'),
+    ('Ms.', 'Jane', 'R.', 'Doe', 'Sr.', 'jane.r.doe@example.com', '234-567-8901');
 GO
