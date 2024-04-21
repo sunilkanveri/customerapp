@@ -26,9 +26,11 @@ helm dependency update
 helm dependency build
 helm install customerapp .
 
+2. Creating Database Objects: 
+kubectl cp scripts/customer.sql customerapp-space/[POD-NAME]:/tmp/init.sql
+kubectl exec -n customerapp-space POD-NAME]  -- /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P 'Default@1245' -i /tmp/init.sql
 
 2. Ports
-
 Grafrana:
 Port: 3000
 user: admin
