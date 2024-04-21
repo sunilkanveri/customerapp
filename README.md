@@ -11,8 +11,9 @@ This Helm chart deploys a .NET API application with a MySQL database backend. It
 
 ## Prerequisites
 
-- Kubernetes cluster
+- Kubernetes installed
 - Helm installed
+- NGINX Crd Installed
 
 ## Installation
 
