@@ -10,6 +10,15 @@ This Helm chart deploys a .NET API application with a MySQL database backend. It
 ## Application Architecture
 <img width="845" alt="Screenshot 2024-04-20 at 1 56 27 PM" src="https://github.com/sunilkanveri/customerapp/assets/6409289/bb2e82b6-1172-4cf4-a9dd-33cd46fe6eb5">
 
+## Technology Stack
+- Kubernetes 
+- Helm
+- .NET
+- C#
+- SQL Server
+- DNS
+- SSL
+
 ## Prerequisites
 
 - Kubernetes installed
@@ -23,10 +32,13 @@ This Helm chart deploys a .NET API application with a MySQL database backend. It
 ```bash
 helm repo add bitnami https://charts.bitnami.com/bitnami
 helm repo add prometheus https://prometheus-community.github.io/helm-charts
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 helm dependency update
 helm dependency build
+kubectl create namespace customerapp-space
 helm install customerapp .
+Modify etc/hosts file and 127.0.0.1 customerapp.local
 
 2. Creating Database Objects: 
 kubectl cp scripts/customer.sql customerapp-space/[POD-NAME]:/tmp/init.sql

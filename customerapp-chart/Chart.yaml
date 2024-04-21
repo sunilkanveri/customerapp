@@ -4,7 +4,7 @@ description: A Helm chart for Kubernetes with SQL Server and .NET application
 version: 0.1.0
 dependencies:
   - name: kube-prometheus-stack
-    version: "19.0.1"
+    version: "45.0.1"
     repository: "https://prometheus-community.github.io/helm-charts"
   - name: mssql-chart
     version: 0.1.0
