@@ -4,7 +4,8 @@ This Helm chart deploys a .NET API application with a MySQL database backend. It
 
 
 ## Directory Structure :
-<img width="380" alt="Screenshot 2024-04-20 at 2 15 32 PM" src="https://github.com/sunilkanveri/customerapp/assets/6409289/8b9d4b08-b70e-4966-9e06-9bd9afb4ee35">
+<img width="309" alt="Screenshot 2024-04-21 at 7 35 29 PM" src="https://github.com/sunilkanveri/customerapp/assets/6409289/7e763cb0-681c-4a51-8201-e3dcefe09681">
+
 
 ## Application Architecture
 <img width="845" alt="Screenshot 2024-04-20 at 1 56 27 PM" src="https://github.com/sunilkanveri/customerapp/assets/6409289/bb2e82b6-1172-4cf4-a9dd-33cd46fe6eb5">
